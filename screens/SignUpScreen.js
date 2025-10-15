@@ -13,6 +13,7 @@ export default function SignUpScreen({ navigation }) {
       Alert.alert("Success", "Account created successfully!");
       navigation.navigate("Home");
     } catch (error) {
+      console.log(error.message);
       Alert.alert("Error", error.message);
     }
   };
