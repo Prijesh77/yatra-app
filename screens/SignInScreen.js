@@ -70,7 +70,7 @@ export default function SignInScreen({ navigation }) {
           disabled={loading}
         >
           <LinearGradient
-            colors={["#1abc9c", "#16a085"]}
+            colors={["#18A558", "#18A558"]}
             start={{ x: 0, y: 0 }}
             end={{ x: 1, y: 1 }}
             style={styles.button}
@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   link: {
-    color: "#16a085",
+    color: "#18A558",
     marginTop: 14,
     textAlign: "center",
     fontWeight: "500",

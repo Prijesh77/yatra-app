@@ -1,9 +1,7 @@
-// config/firebaseConfig.js
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-// ✅ Replace these values with your Firebase project's credentials:
 const firebaseConfig = {
   apiKey: "AIzaSyDsExl0M4UncO2Sqw6DzbRf9puOVxvfTsE",
   authDomain: "yatra-76026.firebaseapp.com",
@@ -15,7 +13,5 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-
 export const auth = getAuth(app);
-export const db = getFirestore(app);
-export default app;
+export const db = getFirestore(app);  // ✅ this creates a Firestore instance
